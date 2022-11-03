@@ -11,29 +11,40 @@ namespace Exception_Handling
     {
         static void Main(string[] args)
         {
-            TypesOfException outOfMemory = new TypesOfException();
-            //outOfMemory.OutOfMemory();
+            try
+            {
+                TypesOfException outOfMemory = new TypesOfException();
+                //outOfMemory.OutOfMemory();
 
-            TypesOfException nullRefrence = new TypesOfException();
-            //nullRefrence.NullRefrence();
+                TypesOfException nullRefrence = new TypesOfException();
+                //nullRefrence.NullRefrence();
 
-            TypesOfException invalidCast = new TypesOfException();
-            //invalidCast.InvalidCast();
+                TypesOfException invalidCast = new TypesOfException();
+                //invalidCast.InvalidCast();
 
-            TypesOfException arrayTypeMismatch = new TypesOfException();
-            //arrayTypeMismatch.ArrayTypeMismatch();
+                TypesOfException arrayTypeMismatch = new TypesOfException();
+                //arrayTypeMismatch.ArrayTypeMismatch();
 
-            TypesOfException indexOutOfRange = new TypesOfException();
-            //indexOutOfRange.IndexOutOfRange();
+                TypesOfException indexOutOfRange = new TypesOfException();
+                //indexOutOfRange.IndexOutOfRange();
 
-            TypesOfException divideByZero = new TypesOfException();
-            //divideByZero.DivideByZero();
+                TypesOfException divideByZero = new TypesOfException();
+                //divideByZero.DivideByZero();
 
-            TypesOfException stackOverflow = new TypesOfException();
-            //stackOverflow.StackOverflow();
+                TypesOfException stackOverflow = new TypesOfException();
+                //stackOverflow.StackOverflow();
 
-            TypesOfException io = new TypesOfException();
-            //io.InputOutput();
+                TypesOfException io = new TypesOfException();
+                //io.InputOutput();
+            }
+            catch(Exception exception)
+            {
+                Console.WriteLine(exception.ToString());
+            }
+            finally
+            {
+                Console.WriteLine("\n\n These are all the types of Exception you should be aware about.");
+            }
         }                
     }
 
